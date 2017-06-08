@@ -1,0 +1,44 @@
+/*Modal Window CSS Component*/
+.modalWindow {
+position: fixed;
+font-family: sans-serif, Arial, Helvetica;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0.4);
+z-index: 99999;
+opacity:0;
+pointer-events: none;
+}
+a{
+    text-decoration: none;
+}
+.modalWindow:target {
+opacity:1;
+pointer-events: auto;
+}
+
+.modalWindow > div {
+width: 60%;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+background: #fff;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+.close {
+color: #6C6F70;
+text-decoration: none;
+float: right;
+font-size: 30px;
+font-weight: 600;
+cursor: pointer;
+}
+
+.close:hover {
+color: #A5A7A8;
+}

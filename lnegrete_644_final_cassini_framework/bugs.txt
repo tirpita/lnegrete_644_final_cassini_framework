@@ -1,0 +1,11 @@
+cassini framework bugs
+----------------------
+CSS COMPONENT MISSING <link rel="stylesheet" href="css/slider.css">
+the css testimonial slider component is missing.  i searched all of the css files for the id and tags outlined in the documentation, but it's nowhere to be found...
+
+UPDATE - CSS slider added to cassini site- was able to download and use.
+------------------------
+CSS - had to fix a lot of errors in the @media query section:
+didn't use lintor?  Lots of extra parenthasis had to be removed and extra # in front of name colors. example #red
+
+—————————————

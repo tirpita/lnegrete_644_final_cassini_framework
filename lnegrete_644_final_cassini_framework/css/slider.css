@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+#testimonials-wrapper {
+  width: 940px;
+  height: 300px;
+  margin: 50px auto;
+  position: relative;
+  margin-bottom: 0px; 
+  overflow: hidden;
+}
+
+.testimonials-inner-wrapper {
+  width: 940px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+@keyframes trigger {
+    0%   {margin-left: 0%;}
+    15%   {margin-left: 0%;}
+    25%   {margin-left: -100%;}
+    30%   {margin-left: -100%;}
+    45%   {margin-left: -100%;}
+    55%   {margin-left: -200%;}
+    60%  {margin-left: -200%;}
+    75%  {margin-left: -200%;}
+    100% {margin-left: -0%;}
+}
+
+.testimonials-overflow-wrapper {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  animation-name: trigger;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+
+}
+
+.testimonial {
+  width: 940px;
+  float: left;
+  vertical-align: middle;
+}
+
+.testimonial img {
+    width: 20%;
+    border-radius: 200px;
+}
+
+.testimonial ul {
+    list-style-type: none;
+}
+
+.testimonial ul li {
+    display: inline;
+    vertical-align: middle;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+}        

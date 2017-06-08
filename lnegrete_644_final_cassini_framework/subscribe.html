@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+ 
+<link rel="stylesheet" href="css/cassiniTooltip.css">
+<link rel="stylesheet" href="css/cassini-grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/cassiniTooltip.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#linktooltip').cassiniToolTip({
+        position:"top"
+    });
+    $('#inputtooltip').cassiniToolTip({
+    });
+    $('#buttontooltip').cassiniToolTip({
+    });
+     $('#paragraphtooltip').cassiniToolTip({
+        position:"top"
+    });
+})
+</script>
+</head>
+<body style="background-color:white;">
+<nav class="nav-bar " id="responsive-nav">
+    <ul class="neon">
+        <a href=""><img class="responsive-logo" src="img/tirp_logo.png" alt=""></a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+       <a href="#" class="icon" >&#9776;</a>
+    </ul>
+</nav>
+<div class="one-col-grid">
+ <div class="grid-element">
+  <div class="grid">
+   <div class="span-7">
+	<h1>Subscribe to Ballerini</h1>
+	<p></p>
+	
+  </div>
+ </div>
+ <div class="grid">
+  <div class="span-5">
+	<h4></h4>
+          <label class="span-2 label-inline">Email</label>
+           <input id="inputtooltip" class="span-7" title="Please Enter your Email address to subscribe to Ballerini's montly online magazine. Don't forget to click 'Submit'." type="email" value="" placeholder="Email Address" />
+  </div>
+ </div>
+ <!-- jquery tooltip -->
+  <div class="grid">
+     <div class="span-7">
+      <h4>Ballerini subscription terms and conditions</h4>
+       <p id="paragraphtooltip" title="Please be sure to read before submitting.">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus odio, elementum quis eleifend nec, accumsan et leo. Mauris tellus tellus, vehicula id pulvinar ut, egestas molestie odio. Suspendisse potenti.</p><p>At per liber placerat nominati, idque phaedrum et vis, minim nusquam id nec. In ius legendos atomorum. Cu vis decore eligendi electram, vel harum causae laoreet ea. Et modo inciderint concludaturque duo, pri ne illud tacimates delicata, mea te dolorum conceptam. Sit justo dicam intellegam in, oblique legimus cum id. Sit agam omittam no.Mea dolore mnesarchum assueverit at, augue noster torquatos id vix. Duo aliquam iudicabit disputando an. Tation iriure vim ea. </p>
+       <p>Pri ne illud tacimates delicata, mea te dolorum conceptam. Sit justo dicam intellegam in, oblique legimus cum id. Sit agam omittam no.Mea dolore mnesarchum assueverit at, augue noster torquatos id vix. Duo aliquam iudicabit disputando an. Tation iriure vim ea. Ei mutat mentitum est.</p>
+   </div>
+   
+  </div>
+ </div>
+ <div class="grid">
+      <h4></h4>
+       <div class="span-1"><input id="buttontooltip" class="cassini-btn" title="By submitting your email you agree to Ballerini's terms and conditions." type="submit" value="Submit"/></div>
+   </div>
+</div>
+
+    
+</body>
+</html>
